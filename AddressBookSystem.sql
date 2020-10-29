@@ -21,3 +21,6 @@ INSERT INTO address_book() values('abhishek','bhagat','katras','dhanbad','jharkh
 ,('naman','gupta','akdf','dehri','bihar',828114,123456785,'klm@gmail.com')
 ,('gaurav','kumar','katras','jamshedpur','jharkhand',828115,123454587,'xyz@gmail.com')
 ;
+
+#Uc4
+UPDATE address_book set address='patna' WHERE lastname='gupta';
