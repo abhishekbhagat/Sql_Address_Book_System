@@ -24,3 +24,6 @@ INSERT INTO address_book() values('abhishek','bhagat','katras','dhanbad','jharkh
 
 #Uc4
 UPDATE address_book set address='patna' WHERE lastname='gupta';
+
+#uc5
+DELETE FROM address_book WHERE firstName='gaurav';
