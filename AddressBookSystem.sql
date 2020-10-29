@@ -30,3 +30,6 @@ DELETE FROM address_book WHERE firstName='gaurav';
 
 #uc6
 SELECT * from address_book WHERE CITY='dhanbad' or state='bihar' ;
+
+#uc7
+SELECT COUNT(city),COUNT(state) FROM address_book ;
