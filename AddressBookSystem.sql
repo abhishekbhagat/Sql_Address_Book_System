@@ -33,3 +33,6 @@ SELECT * from address_book WHERE CITY='dhanbad' or state='bihar' ;
 
 #uc7
 SELECT COUNT(city),COUNT(state) FROM address_book ;
+
+#uc8
+SELECT * FROM address_book WHERE city='dhanbad' ORDER BY firstName ASC;
