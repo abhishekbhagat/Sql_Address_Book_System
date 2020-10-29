@@ -27,3 +27,6 @@ UPDATE address_book set address='patna' WHERE lastname='gupta';
 
 #uc5
 DELETE FROM address_book WHERE firstName='gaurav';
+
+#uc6
+SELECT * from address_book WHERE CITY='dhanbad' or state='bihar' ;
