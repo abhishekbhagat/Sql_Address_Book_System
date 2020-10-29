@@ -14,3 +14,10 @@ zip double not null,
 phoneNumber double not null,
 email varchar (150) not null
 );
+
+#UC3
+INSERT INTO address_book() values('abhishek','bhagat','katras','dhanbad','jharkhand',828113,123456,'abdk@gmail.com')
+,('abhishek','bhagat','katras','dhanbad','jharkhand',828113,12345645,'abdk@gmail.com')
+,('naman','gupta','akdf','dehri','bihar',828114,123456785,'klm@gmail.com')
+,('gaurav','kumar','katras','jamshedpur','jharkhand',828115,123454587,'xyz@gmail.com')
+;
