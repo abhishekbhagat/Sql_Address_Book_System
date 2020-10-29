@@ -36,3 +36,9 @@ SELECT COUNT(city),COUNT(state) FROM address_book ;
 
 #uc8
 SELECT * FROM address_book WHERE city='dhanbad' ORDER BY firstName ASC;
+
+#uc9
+ALTER TABLE  address_book ADD name varchar(300)  not null after email;
+ALTER TABLE  address_book ADD type varchar(300)  not null after name;
+UPDATE address_book set type='friend' WHERE lastname='gupta';
+UPDATE address_book set type='friend' WHERE lastname='bhagat';
