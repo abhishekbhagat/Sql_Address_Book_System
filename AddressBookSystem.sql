@@ -45,3 +45,8 @@ UPDATE address_book set type='friend' WHERE lastname='bhagat';
 
 #uc10
 SELECT COUNT(type) FROM address_book group by type 
+
+#UC11
+INSERT INTO address_book() values('abhishek','bhagat','katras','dhanbad','jharkhand',828113,123456,'abdk@gmail.com','ad','friends')
+,('rahul','kumar','katras','dhanbad','jharkhand',828113,12345645,'abdk@gmail.com','abc','Family');
+
