@@ -50,3 +50,37 @@ SELECT COUNT(type) FROM address_book group by type
 INSERT INTO address_book() values('abhishek','bhagat','katras','dhanbad','jharkhand',828113,123456,'abdk@gmail.com','ad','friends')
 ,('rahul','kumar','katras','dhanbad','jharkhand',828113,12345645,'abdk@gmail.com','abc','Family');
 
+#uc12
+
+CREATE TABLE address_book_system
+(
+  address_book_id int primary key,
+  address_book_name varchar(200)
+);      
+CREATE TABLE contact_person
+ (
+ contact_id INT primary key,
+ address_book_id int,
+ first_name VARCHAR(50) NOT NULL,
+ last_name VARCHAR(50) NOT NULL,
+ email_id VARCHAR(50) NOT NULL,
+ phone_number VARCHAR(50) NOT NULL,
+ foreign key(address_book_id) references address_book_system(address_book_id)
+ );
+ 
+ CREATE TABLE contact_person_address
+ (
+ contact_id INT NOT NULL,
+ address VARCHAR(50) NOT NULL,
+ city VARCHAR(50) NOT NULL,
+ state VARCHAR(50) NOT NULL,
+ zip VARCHAR(50) NOT NULL,
+ foreign key(contact_id) references contact_person(contact_id)
+ );
+ 
+CREATE TABLE contact_type
+(
+ contact_id int,
+ type_name VARCHAR(50) NOT NULL,
+ foreign key(contact_id) references contact_person(contact_id)
+);
