@@ -84,3 +84,19 @@ CREATE TABLE contact_type
  type_name VARCHAR(50) NOT NULL,
  foreign key(contact_id) references contact_person(contact_id)
 );
+
+#UC13
+
+SELECT * from contact_person,contact_person_address WHERE 
+contact_person.contact_id=contact_person_address.contact_id 
+and contact_person_address.city='dhandbad';
+
+
+SELECT * from contact_person,contact_person_address WHERE
+contact_person.contact_id=contact_person_address.contact_id 
+and contact_person_address.city='dhandbad' order by contact_person.first_name asc;
+
+SELECT COUNT(c.contact_id)
+FROM contact_person c , contact_type t
+WHERE c.contact_id = t.contact_id
+GROUP BY(t.contact_id );
