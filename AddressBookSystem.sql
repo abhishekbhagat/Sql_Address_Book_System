@@ -44,7 +44,7 @@ UPDATE address_book set type='friend' WHERE lastname='gupta';
 UPDATE address_book set type='friend' WHERE lastname='bhagat';
 
 #uc10
-SELECT COUNT(type) FROM address_book group by type 
+SELECT COUNT(type) FROM address_book group by type; 
 
 #UC11
 INSERT INTO address_book() values('abhishek','bhagat','katras','dhanbad','jharkhand',828113,123456,'abdk@gmail.com','ad','friends')
@@ -99,4 +99,4 @@ and contact_person_address.city='dhandbad' order by contact_person.first_name as
 SELECT COUNT(c.contact_id)
 FROM contact_person c , contact_type t
 WHERE c.contact_id = t.contact_id
-GROUP BY(t.contact_id );
+GROUP BY(t.type_name);
